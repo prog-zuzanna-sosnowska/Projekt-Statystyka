@@ -12,9 +12,9 @@ x_1 = a['* liczba zdających']
 y_1 = a['* zdawalność (%).1']
 z_1 = a['średni wynik (%)']
 
-x_2 = b['* liczba zdających.2']
-y_2 = b['* zdawalność (%).3']
-z_2 = b['średni wynik (%).2']
+x_2 = b['* liczba zdających']
+y_2 = b['* zdawalność (%).1']
+z_2 = b['średni wynik (%)']
 
 
 """ Histogramy reprezentujące gęstość empiryczną """

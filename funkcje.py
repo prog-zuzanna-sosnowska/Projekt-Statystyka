@@ -104,24 +104,25 @@ def boxplot(data):
 
 
 if __name__ == '__main__':
-    dataset_1 = "EM2015.csv"
-    dataset_2 = "EM2023.csv"
-    x_1 = pd.read_csv(dataset_1, encoding='latin1', sep=';', low_memory=False,
-                    header=0, skiprows=[1, 2], decimal=',')
-    x_2 = pd.read_csv(dataset_2, encoding='latin1', sep=';', low_memory=False,
-                    header=0, skiprows=[1, 2], decimal=',')
-    x_1.columns = [i for i in range(1, len(x_1.columns) + 1)]
-    x_2.columns = [i for i in range(1, len(x_2.columns) + 1)]
-
-    # średni wynik w poszczególnych szkołach  z matury - matematyka, poziom podstawowy, formuła 2015
-    a_1 = x_1[x_1[68].notnull() & x_1[71].notnull()].loc[:, 71].to_numpy()
-    # liczba zdających w poszczególnych szkołach w formule 2015
-    b_1 = x_1[x_1[68].notnull() & x_1[71].notnull()].loc[:, 68].to_numpy().astype(int)
-
-    a_2 = x_2[x_2[88].notnull() & x_2[91].notnull()].loc[:, 91].to_numpy()
-    b_2 = x_2[x_2[88].notnull() & x_2[91].notnull()].loc[:, 88].to_numpy().astype(int)
-
-    print(a_2)
+    pass
+    # dataset_1 = "EM2015.csv"
+    # dataset_2 = "EM2023.csv"
+    # x_1 = pd.read_csv(dataset_1, encoding='latin1', sep=';', low_memory=False,
+    #                 header=0, skiprows=[1, 2], decimal=',')
+    # x_2 = pd.read_csv(dataset_2, encoding='latin1', sep=';', low_memory=False,
+    #                 header=0, skiprows=[1, 2], decimal=',')
+    # x_1.columns = [i for i in range(1, len(x_1.columns) + 1)]
+    # x_2.columns = [i for i in range(1, len(x_2.columns) + 1)]
+    #
+    # # średni wynik w poszczególnych szkołach  z matury - matematyka, poziom podstawowy, formuła 2015
+    # a_1 = x_1[x_1[68].notnull() & x_1[71].notnull()].loc[:, 71].to_numpy()
+    # # liczba zdających w poszczególnych szkołach w formule 2015
+    # b_1 = x_1[x_1[68].notnull() & x_1[71].notnull()].loc[:, 68].to_numpy().astype(int)
+    #
+    # a_2 = x_2[x_2[88].notnull() & x_2[91].notnull()].loc[:, 91].to_numpy()
+    # b_2 = x_2[x_2[88].notnull() & x_2[91].notnull()].loc[:, 88].to_numpy().astype(int)
+    #
+    # print(a_2)
 
     # print(median(a_1))
     # print(median(b_1))
@@ -135,7 +136,7 @@ if __name__ == '__main__':
     # print(arithmetic_mean(a_2))
     # print(arithmetic_mean(b_2))
     #
-    sns.kdeplot(a_1, color='navy')
-    sns.kdeplot(a_2, color='orange')
-    plt.legend(['EM2015', 'EM2023'], loc='best')
-    plt.show()
+    # sns.kdeplot(a_1, color='navy')
+    # sns.kdeplot(a_2, color='orange')
+    # plt.legend(['EM2015', 'EM2023'], loc='best')
+    # plt.show()
