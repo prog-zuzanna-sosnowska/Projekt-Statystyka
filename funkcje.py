@@ -139,5 +139,3 @@ if __name__ == '__main__':
     sns.kdeplot(a_2, color='orange')
     plt.legend(['EM2015', 'EM2023'], loc='best')
     plt.show()
-
-
